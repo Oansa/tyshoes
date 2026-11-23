@@ -1,0 +1,44 @@
+.seq-section {
+  position: relative;
+  width: 100%;
+}
+
+/* Sticky canvas layer — always full viewport behind content */
+.seq-canvas-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  width: 100%;
+  margin-bottom: -100dvh;
+  z-index: var(--z-canvas);
+  overflow: hidden;
+}
+
+.seq-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark gradient at the bottom of the hero */
+.seq-fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25dvh;
+  background: linear-gradient(to bottom, transparent, var(--color-charcoal));
+  pointer-events: none;
+}
+
+/* Content layer — flows on top of the sticky canvas */
+.seq-content {
+  position: relative;
+  z-index: var(--z-content);
+  pointer-events: none; /* restore in children that need it */
+}
+
+.seq-content > * {
+  pointer-events: auto;
+}

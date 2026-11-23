@@ -1,0 +1,59 @@
+/* ─────────────────────────────────────────────
+   Design Tokens
+   ───────────────────────────────────────────── */
+:root {
+  /* Palette */
+  --color-charcoal:    #0D0B0A;
+  --color-charcoal-80: rgba(13, 11, 10, 0.80);
+  --color-ember:       #FF6A1F;
+  --color-amber:       #FFA64D;
+  --color-bone:        #F6F0E8;
+  --color-volt:        #8CFF3F;
+  --color-white:       #FFFFFF;
+  --color-white-10:    rgba(255,255,255,0.10);
+  --color-white-20:    rgba(255,255,255,0.20);
+  --color-white-05:    rgba(255,255,255,0.05);
+
+  /* Typography */
+  --font-serif:  'Cormorant Garamond', Georgia, serif;
+  --font-sans:   'Inter', system-ui, sans-serif;
+
+  /* Fluid type */
+  --text-xs:   clamp(0.65rem,  1.2vw, 0.75rem);
+  --text-sm:   clamp(0.8rem,   1.5vw, 0.9rem);
+  --text-base: clamp(0.9rem,   1.8vw, 1rem);
+  --text-lg:   clamp(1rem,     2vw,   1.2rem);
+  --text-xl:   clamp(1.1rem,   2.5vw, 1.4rem);
+  --text-2xl:  clamp(1.3rem,   3vw,   1.75rem);
+  --text-3xl:  clamp(1.75rem,  4vw,   2.5rem);
+  --text-4xl:  clamp(2.2rem,   6vw,   4rem);
+  --text-5xl:  clamp(3rem,     8vw,   6rem);
+  --text-hero: clamp(3.5rem,  10vw,   8rem);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Z-index layers */
+  --z-canvas:  0;
+  --z-content: 1;
+  --z-nav:     100;
+  --z-loader:  200;
+}

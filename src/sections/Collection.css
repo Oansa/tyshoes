@@ -1,0 +1,104 @@
+.collection-intro-vp {
+  height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-16) var(--space-12);
+}
+
+.collection-intro {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 640px;
+}
+
+.collection-headline {
+  font-size: var(--text-5xl);
+  line-height: 1.0;
+  color: var(--color-bone);
+}
+
+.collection-intro__sub {
+  font-size: var(--text-lg);
+  color: rgba(246,240,232,0.7);
+  max-width: 480px;
+}
+
+/* Product card slots */
+.collection-card-slot {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--space-8) var(--space-12);
+}
+
+.collection-product-card {
+  max-width: 340px;
+  min-width: 260px;
+  border-color: rgba(var(--accent, var(--color-ember)), 0.3);
+}
+
+/* Store panel */
+.collection-store-vp {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+}
+
+.collection-store-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-12) var(--space-10);
+  max-width: 480px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  border-radius: var(--radius-xl);
+}
+
+.collection-store__headline {
+  font-size: var(--text-3xl);
+  font-style: italic;
+  color: var(--color-bone);
+}
+
+.collection-store__info {
+  font-size: var(--text-sm);
+  color: rgba(246,240,232,0.6);
+  line-height: 1.6;
+}
+
+.collection-store__actions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-4);
+}
+
+@media (max-width: 767px) {
+  .collection-intro-vp,
+  .collection-card-slot,
+  .collection-store-vp {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .collection-card-slot {
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: var(--space-16);
+  }
+
+  .collection-product-card {
+    max-width: none;
+    width: 100%;
+  }
+
+  .collection-headline {
+    font-size: var(--text-4xl);
+  }
+}
